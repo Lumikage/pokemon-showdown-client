@@ -191,7 +191,7 @@ const Dex = new class implements ModdedDex {
 	// })();
 
 	resourcePrefix = '';
-	fxPrefix = 'https://github.com/Lumikage/pokemon-showdown-client/tree/master/fx/';
+	fxPrefix = 'https://raw.githubusercontent.com/Lumikage/pokemon-showdown-client/master/fx/';
 
 	loadedSpriteData = {xy: 1, bw: 0};
 	moddedDexes: {[mod: string]: ModdedDex} = {};

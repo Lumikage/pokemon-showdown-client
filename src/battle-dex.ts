@@ -190,8 +190,16 @@ const Dex = new class implements ModdedDex {
 		// return `${protocol}//${window.Config ? Config.routes.client : 'play.pokemonshowdown.com'}/fx/`;
 	// })();
 
-	resourcePrefix = 'https://raw.githubusercontent.com/Lumikage/pokemon-showdown-client/master/';
-	fxPrefix = 'https://raw.githubusercontent.com/Lumikage/pokemon-showdown-client/master/fx/';
+	// resourcePrefix = 'https://raw.githubusercontent.com/Lumikage/pokemon-showdown-client/master/';
+	// fxPrefix = 'https://raw.githubusercontent.com/Lumikage/pokemon-showdown-client/master/fx/';
+
+	resourcePrefix = (() => {
+		return 'https://raw.githubusercontent.com/Lumikage/pokemon-showdown-client/master/';
+	})();
+
+	fxPrefix = (() => {
+		return 'https://raw.githubusercontent.com/Lumikage/pokemon-showdown-client/master/fx/';
+	})();
 
 	loadedSpriteData = {xy: 1, bw: 0};
 	moddedDexes: {[mod: string]: ModdedDex} = {};
